@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container" autosize="">
+
+  <mat-sidenav-content>
+    <!-- Toolbar -->
+    <mat-toolbar class="toolbar" style="background-color: rgba(0, 100, 166, 1);">
+      <h1>MSE-CampusInfo</h1>
+    </mat-toolbar>
+
+    <!-- Bottom Navbar -->
+    <div class="bottom-tab">
+      <button class="tablinks" [routerLink]="['/schedule']">Schedule</button>
+      <button class="tablinks" [routerLink]="['/location']">Location</button>
+    </div>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
