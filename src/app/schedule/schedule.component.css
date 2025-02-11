@@ -40,6 +40,48 @@
     margin: 0px 0px 0px 0px;
 }
 
+::ng-deep .fc .fc-button-primary {
+    background-color: rgba(245, 245, 245, 1);
+    color: rgba(0, 0, 0, 0.54);
+    border: none;
+    outline: none;
+}
+
+::ng-deep .fc .fc-button-group > .fc-button:hover {
+    background-color: rgba(241, 240, 245, 1);
+    color: rgba(105, 59, 184, 0.87);
+}
+
+::ng-deep .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    background-color: rgba(232, 227, 242, 1);
+    color: rgba(105, 59, 184, 1);
+}
+
+::ng-deep .fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none;
+}
+
+::ng-deep .fc .fc-today-button:hover {
+    background-color: rgba(241, 240, 245, 1);
+    color: rgba(105, 59, 184, 0.87);
+}
+
+::ng-deep .fc .fc-button-primary:not(:disabled):active {
+    background-color: rgba(241, 240, 245, 1);
+    color: rgba(105, 59, 184, 1);
+}
+
+::ng-deep .fc .fc-button-primary:disabled {
+    background-color: rgba(232, 227, 242, 1);
+    color: rgba(105, 59, 184, 1);
+    opacity: inherit;
+}
+
+::ng-deep .fc .fc-button-primary:hover {
+    background-color: rgba(241, 240, 245, 1);
+    color: rgba(105, 59, 184, 0.87);
+}
+
 ::ng-deep .fc .fc-view-harness{
     margin-bottom: 50px;
 }
@@ -48,6 +90,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    background-color: rgba(184, 178, 59, 0.87);
+}
+
+::ng-deep .fc-v-event {
+    border:  none;
 }
 
 ::ng-deep .fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start{

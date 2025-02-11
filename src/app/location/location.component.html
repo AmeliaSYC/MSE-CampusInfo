@@ -15,43 +15,6 @@
                                 </mat-card-header>
                             </mat-card>
                         </div>
-                        <div class="route">
-                            <mat-card class="routeCard">
-                                <form>
-                                    <mat-form-field class="addressForm">
-                                        <mat-label>Enter your starting point</mat-label>
-                                        <input matInput id="start-input" type="text" placeholder="Ex. Winterthur Bahnhof">
-                                        <input matInput id="destination-input" type="text" value="ZL" style="display: none;">
-                                    </mat-form-field>
-                                    <div id="mode-selector" class="button-group">
-                                        <mat-button-toggle-group class="transitButtonGroup"
-                                                                 name="transit-method" 
-                                                                 aria-label="transit method"
-                                                                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
-                                                                <mat-button-toggle id="changemode-transit">
-                                                                    <mat-icon aria-label="transit">directions_transit</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle id="changemode-bicycling">
-                                                                    <mat-icon aria-label="bicycling">directions_bike</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle id="changemode-walking">
-                                                                    <mat-icon aria-label="walking">directions_walk</mat-icon>
-                                                                </mat-button-toggle>
-                                        </mat-button-toggle-group>
-                                    </div>
-                                </form>
-                            </mat-card>
-                        </div>
-                        <div class="entrance">
-                            <mat-accordion multi>
-                                <mat-expansion-panel class="expansionPanel">
-                                  <mat-expansion-panel-header style="padding-left: 10px; padding-right: 10px;">
-                                    <mat-panel-title>Entrance direction</mat-panel-title>
-                                  </mat-expansion-panel-header>
-                                  <img src="/src/assets/image/ZL.png" alt=" ">
-                                </mat-expansion-panel>
-                            </mat-accordion>
-                        </div>
                     </div>
                     <div class="flex-item-right">
                         <div id="map" class="map">
@@ -79,47 +42,6 @@
                                     <mat-card-subtitle>Technikumstrasse 9, 8400 Winterthur</mat-card-subtitle>
                                 </mat-card-header>
                             </mat-card>
-                        </div>
-                        <div class="route">
-                            <mat-card class="routeCard">
-                                <form>
-                                    <mat-form-field class="addressForm">
-                                        <mat-label>Enter your starting point</mat-label>
-                                        <input matInput placeholder="Ex. Winterthur Bahnhof">
-                                    </mat-form-field>
-                                    <div class="button-group">
-                                        <mat-button-toggle-group class="transitButtonGroup"
-                                                                 name="transit-method" 
-                                                                 aria-label="transit method"
-                                                                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="transit">directions_transit</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="bicycling">directions_bike</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="walking">directions_walk</mat-icon>
-                                                                </mat-button-toggle>
-                                        </mat-button-toggle-group>
-                                        <span class="button-spacer"></span>
-                                        <button mat-stroked-button class="routeButton" aria-label="route button">
-                                            <mat-icon aria-label="direction">directions</mat-icon>
-                                            Route
-                                        </button>
-                                    </div>
-                                </form>
-                            </mat-card>
-                        </div>
-                        <div class="entrance">
-                            <mat-accordion multi>
-                                <mat-expansion-panel class="expansionPanel">
-                                  <mat-expansion-panel-header style="padding-left: 10px; padding-right: 10px;">
-                                    <mat-panel-title>Entrance direction</mat-panel-title>
-                                  </mat-expansion-panel-header>
-                                  <img alt=" ">
-                                </mat-expansion-panel>
-                            </mat-accordion>
                         </div>
                     </div>
                     <div class="flex-item-right">
@@ -149,47 +71,6 @@
                                 </mat-card-header>
                             </mat-card>
                         </div>
-                        <div class="route">
-                            <mat-card class="routeCard">
-                                <form>
-                                    <mat-form-field class="addressForm">
-                                        <mat-label>Enter your starting point</mat-label>
-                                        <input matInput placeholder="Ex. Winterthur Bahnhof">
-                                    </mat-form-field>
-                                    <div class="button-group">
-                                        <mat-button-toggle-group class="transitButtonGroup"
-                                                                 name="transit-method" 
-                                                                 aria-label="transit method"
-                                                                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="transit">directions_transit</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="bicycling">directions_bike</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="walking">directions_walk</mat-icon>
-                                                                </mat-button-toggle>
-                                        </mat-button-toggle-group>
-                                        <span class="button-spacer"></span>
-                                        <button mat-stroked-button class="routeButton" aria-label="route button">
-                                            <mat-icon aria-label="direction">directions</mat-icon>
-                                            Route
-                                        </button>
-                                    </div>
-                                </form>
-                            </mat-card>
-                        </div>
-                        <div class="entrance">
-                            <mat-accordion multi>
-                                <mat-expansion-panel class="expansionPanel">
-                                  <mat-expansion-panel-header style="padding-left: 10px; padding-right: 10px;">
-                                    <mat-panel-title>Entrance direction</mat-panel-title>
-                                  </mat-expansion-panel-header>
-                                  <img alt=" ">
-                                </mat-expansion-panel>
-                            </mat-accordion>
-                        </div>
                     </div>
                     <div class="flex-item-right">
                         <div class="map">
@@ -217,47 +98,6 @@
                                     <mat-card-subtitle>Lagerstrasse 2, 8004 Zürich</mat-card-subtitle>
                                 </mat-card-header>
                             </mat-card>
-                        </div>
-                        <div class="route">
-                            <mat-card class="routeCard">
-                                <form>
-                                    <mat-form-field class="addressForm">
-                                        <mat-label>Enter your starting point</mat-label>
-                                        <input matInput placeholder="Ex. Winterthur Bahnhof">
-                                    </mat-form-field>
-                                    <div class="button-group">
-                                        <mat-button-toggle-group class="transitButtonGroup"
-                                                                 name="transit-method" 
-                                                                 aria-label="transit method"
-                                                                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="transit">directions_transit</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="bicycling">directions_bike</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="walking">directions_walk</mat-icon>
-                                                                </mat-button-toggle>
-                                        </mat-button-toggle-group>
-                                        <span class="button-spacer"></span>
-                                        <button mat-stroked-button class="routeButton" aria-label="route button">
-                                            <mat-icon aria-label="direction">directions</mat-icon>
-                                            Route
-                                        </button>
-                                    </div>
-                                </form>
-                            </mat-card>
-                        </div>
-                        <div class="entrance">
-                            <mat-accordion multi>
-                                <mat-expansion-panel class="expansionPanel">
-                                  <mat-expansion-panel-header style="padding-left: 10px; padding-right: 10px;">
-                                    <mat-panel-title>Entrance direction</mat-panel-title>
-                                  </mat-expansion-panel-header>
-                                  <img alt=" ">
-                                </mat-expansion-panel>
-                            </mat-accordion>
                         </div>
                     </div>
                     <div class="flex-item-right">
@@ -287,47 +127,6 @@
                                 </mat-card-header>
                             </mat-card>
                         </div>
-                        <div class="route">
-                            <mat-card class="routeCard">
-                                <form>
-                                    <mat-form-field class="addressForm">
-                                        <mat-label>Enter your starting point</mat-label>
-                                        <input matInput placeholder="Ex. Winterthur Bahnhof">
-                                    </mat-form-field>
-                                    <div class="button-group">
-                                        <mat-button-toggle-group class="transitButtonGroup"
-                                                                 name="transit-method" 
-                                                                 aria-label="transit method"
-                                                                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="transit">directions_transit</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="bicycling">directions_bike</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="walking">directions_walk</mat-icon>
-                                                                </mat-button-toggle>
-                                        </mat-button-toggle-group>
-                                        <span class="button-spacer"></span>
-                                        <button mat-stroked-button class="routeButton" aria-label="route button">
-                                            <mat-icon aria-label="direction">directions</mat-icon>
-                                            Route
-                                        </button>
-                                    </div>
-                                </form>
-                            </mat-card>
-                        </div>
-                        <div class="entrance">
-                            <mat-accordion multi>
-                                <mat-expansion-panel class="expansionPanel">
-                                  <mat-expansion-panel-header style="padding-left: 10px; padding-right: 10px;">
-                                    <mat-panel-title>Entrance direction</mat-panel-title>
-                                  </mat-expansion-panel-header>
-                                  <img alt=" ">
-                                </mat-expansion-panel>
-                            </mat-accordion>
-                        </div>
                     </div>
                     <div class="flex-item-right">
                         <div class="map">
@@ -355,47 +154,6 @@
                                     <mat-card-subtitle>Av. de Provence 6, 1007 Lausanne</mat-card-subtitle>
                                 </mat-card-header>
                             </mat-card>
-                        </div>
-                        <div class="route">
-                            <mat-card class="routeCard">
-                                <form>
-                                    <mat-form-field class="addressForm">
-                                        <mat-label>Enter your starting point</mat-label>
-                                        <input matInput placeholder="Ex. Winterthur Bahnhof">
-                                    </mat-form-field>
-                                    <div class="button-group">
-                                        <mat-button-toggle-group class="transitButtonGroup"
-                                                                 name="transit-method" 
-                                                                 aria-label="transit method"
-                                                                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="transit">directions_transit</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="bicycling">directions_bike</mat-icon>
-                                                                </mat-button-toggle>
-                                                                <mat-button-toggle>
-                                                                    <mat-icon aria-label="walking">directions_walk</mat-icon>
-                                                                </mat-button-toggle>
-                                        </mat-button-toggle-group>
-                                        <span class="button-spacer"></span>
-                                        <button mat-stroked-button class="routeButton" aria-label="route button">
-                                            <mat-icon aria-label="direction">directions</mat-icon>
-                                            Route
-                                        </button>
-                                    </div>
-                                </form>
-                            </mat-card>
-                        </div>
-                        <div class="entrance">
-                            <mat-accordion multi>
-                                <mat-expansion-panel class="expansionPanel">
-                                  <mat-expansion-panel-header style="padding-left: 10px; padding-right: 10px;">
-                                    <mat-panel-title>Entrance direction</mat-panel-title>
-                                  </mat-expansion-panel-header>
-                                  <img alt=" ">
-                                </mat-expansion-panel>
-                            </mat-accordion>
                         </div>
                     </div>
                     <div class="flex-item-right">

@@ -17,40 +17,64 @@
   padding: 0px 20px 0px 20px;
 }
 
+
 .bottom-tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: rgba(0, 100, 166, 1);
   position: fixed;
   bottom: 0;
   z-index: 999;
   width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .bottom-tab button {
   background-color: inherit;
+  color: rgba(255,255,255,0.54);
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
+  width: 50%;
 }
 
-.bottom-tab button:hover {
-  background-color: #ddd;
+.tablinks {
+  padding: 0px 0px 0px 0px;
+}
+
+.tab-icon {
+  padding: 10px 0px 0px 0px;
+  display: inline-table;
+}
+
+::ng-deep .mat-typography h2 {
+  margin: 0px 0px 0px 0px;
+}
+
+.tab-button:hover {
+  background-color: rgba(255,255,255,0.87);
+  color: rgba(0, 100, 166, 0.87);
+}
+
+.tab-name:hover, .tab-icon:hover {
+  color: rgba(0, 100, 166, 0.87);
 }
 
 .bottom-tab button.active {
-  background-color: #ccc;
+  color:  rgba(255,255,255,1);
 }
 
-.tabcontent {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+
+.bottom-tab:focus {
+  background-color: rgba(0, 100, 166, 1);
 }
 
-.icon{
-  margin: 5px 5px 5px 5px;
+.tab-name:focus {
+  color: rgba(255,255,255,1);
+}
+
+.tab-icon:focus {
+  color: rgba(255,255,255,1);
 }

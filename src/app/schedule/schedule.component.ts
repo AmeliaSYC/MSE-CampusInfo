@@ -144,6 +144,8 @@ export class ScheduleComponent {
       let calendar = new Calendar(calendarEl, { 
         plugins: [dayGridPlugin, timeGridPlugin,listPlugin, interactionPlugin],
         initialView: 'timeGridWeek',
+        timeZone: 'Europe/Zurich',
+        themeSystem: 'Spacelab',
         headerToolbar: {
           center: 'prev title next',
           start: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek today',
@@ -153,7 +155,6 @@ export class ScheduleComponent {
         height: 700,
         slotEventOverlap: true,
 
-        timeZone: 'Europe/Zurich',
         firstDay: 1,
         stickyHeaderDates: true,
         weekNumbers: true,

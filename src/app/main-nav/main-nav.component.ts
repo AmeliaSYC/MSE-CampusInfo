@@ -9,6 +9,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { RouterModule } from '@angular/router'; //To activate routes
+//import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-main-nav',
@@ -33,7 +34,6 @@ export class MainNavComponent  {
       shareReplay()
     );
 
-  constructor() { }
-
+  constructor() {}
 }
 

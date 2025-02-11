@@ -8,8 +8,20 @@
 
     <!-- Bottom Navbar -->
     <div class="bottom-tab">
-      <button class="tablinks" [routerLink]="['/schedule']">Schedule</button>
-      <button class="tablinks" [routerLink]="['/location']">Location</button>
+      <button class="tablinks" [routerLink]="['/schedule']" [routerLinkActive]="['active']">
+        <div class="tab-button">
+          <mat-icon class="tab-icon">calendar_today
+            <h2 class="tab-name">Schedule</h2>
+          </mat-icon>
+        </div>
+      </button>
+      <button class="tablinks" [routerLink]="['/location']" [routerLinkActive]="['active', 'schedule']">
+        <div class="tab-button">
+          <mat-icon class="tab-icon">room
+            <h2 class="tab-name">Location</h2>
+          </mat-icon>
+        </div>
+      </button>
     </div>
 
     <router-outlet></router-outlet>
