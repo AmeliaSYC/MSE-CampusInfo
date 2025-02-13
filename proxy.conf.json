@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "http://localhost:4200",
+      "target": "https://ameliasyc.github.io",
       "secure": false,
       "pathRewrite": {"^/api": ""},
       "logLevel": "info",
