@@ -13,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { DOCUMENT } from '@angular/common';
+import { Data } from '@angular/router';
 
 export interface DialogData {
   title: string;
@@ -59,8 +60,8 @@ export class ScheduleComponent {
       let fcRecurSources = {
         AUT24Events: function(info, successCallback, failureCallback) {
           let AUT24Events: any [] = [];
-          http.get('src/assets/module_AUT24_WeekDay.json').subscribe((data: any) => {
-            data.forEach((event: any) => {
+          http.get('/assets/module_AUT24_WeekDay.json').subscribe((data: any) => {
+            data.AUT24.forEach((event: any) => {
               AUT24Events.push({
                 title: event.id,
                 daysOfWeek: event.dayNum,
@@ -82,9 +83,9 @@ export class ScheduleComponent {
         },
 
         SPR24ComWeek: function(info, successCallback, failureCallback){
-          http.get('https://drive.google.com/file/d/1-VvUQnfmYgAsYpkjqoXDsEUYWmGC7gfh/view?usp=drive_link').subscribe((data: any) => {
+          http.get('/assets/compensationWeek_SPR24.json').subscribe((data: any) => {
             let SPR24ComWeek: any[] = [];
-            data.forEach((event: any) => {
+            data.SPR24ComWeek.forEach((event: any) => {
               SPR24ComWeek.push({
                 title: event.id,
                 start: event.comStartTime,
@@ -117,9 +118,9 @@ export class ScheduleComponent {
         },
 
         SPR24Events: function(info, successCallback, failureCallback) {
-          http.get('https://drive.google.com/file/d/1YY8x2VX-zBXSdXWIphQAHM7_YJw4xf6P/view?usp=drive_link').subscribe((data: any) => {
+          http.get('/assets/module_SPR24_WeekDay.json').subscribe((data: any) => {
             let SPR24Events: any[] = [];
-            data.forEach((event: any) => {
+            data.SPR24.forEach((event: any) => {
               SPR24Events.push({
                 title: event.id,
                 daysOfWeek: event.dayNum,
