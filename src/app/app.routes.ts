@@ -7,5 +7,5 @@ export const routes: Routes = [
     { path: 'schedule', component: ScheduleComponent },
     { path: 'location', component: LocationComponent },
     { path: '', redirectTo: '/schedule', pathMatch: 'full'},
-    {path: '**', component: PageNotFoundComponent}
+    { path: '**', component: PageNotFoundComponent }
 ];

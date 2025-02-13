@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/MSE-CampusInfo-WebApp',
+  basePath: '/MSE-CampusInfo',
   supportedLocales: {
   "en-US": ""
 },

@@ -2,33 +2,33 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/MSE-CampusInfo-WebApp/',
+  baseHref: '/MSE-CampusInfo/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "redirectTo": "/MSE-CampusInfo-WebApp/schedule",
-    "route": "/MSE-CampusInfo-WebApp"
+    "redirectTo": "/MSE-CampusInfo/schedule",
+    "route": "/MSE-CampusInfo"
   },
   {
     "renderMode": 2,
-    "route": "/MSE-CampusInfo-WebApp/schedule"
+    "route": "/MSE-CampusInfo/schedule"
   },
   {
     "renderMode": 2,
-    "route": "/MSE-CampusInfo-WebApp/location"
+    "route": "/MSE-CampusInfo/location"
   },
   {
     "renderMode": 2,
-    "route": "/MSE-CampusInfo-WebApp/**"
+    "route": "/MSE-CampusInfo/**"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 23711, hash: '57f1046a8ceac3b66f6123da19701348f369e6b056dab4911b2f1ab5872535ac', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 17330, hash: '4b3d24e886e8960478c154da8ea0facb5cc19d97941737597ef0fd117174415a', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'schedule/index.html': {size: 30532, hash: '7cee912cae799a182b8fde3b3553d798e6a896fdaf66fb4c502d92a5176b4903', text: () => import('./assets-chunks/schedule_index_html.mjs').then(m => m.default)},
-    'location/index.html': {size: 30540, hash: '57e98d583b3a87bd5fba7f60dd017cd23871edcc802a2b05f05c5dde9115f484', text: () => import('./assets-chunks/location_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 23704, hash: '5718b906338974fa25197a6b94cf4b212dcb576724f1986920103b665722bb6b', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 17323, hash: '9726976a59353add0f9e3b747cbecc58916d6e90b8644823d003da742bc9ed0f', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'schedule/index.html': {size: 30525, hash: '3d78a0958503e14f91f57c63043cdcd938734298dce3c6c1ec053da62a22cf99', text: () => import('./assets-chunks/schedule_index_html.mjs').then(m => m.default)},
+    'location/index.html': {size: 30533, hash: '76e8ce67d65c60998dc6ac279690500a3f2fc0b92327da16ec8f7ebb4ea9b62d', text: () => import('./assets-chunks/location_index_html.mjs').then(m => m.default)},
     'styles-CYCN7I4T.css': {size: 7160, hash: 'BhUDCpaJWZ8', text: () => import('./assets-chunks/styles-CYCN7I4T_css.mjs').then(m => m.default)}
   },
 };
