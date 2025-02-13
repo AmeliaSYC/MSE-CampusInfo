@@ -1,7 +1,0 @@
-{
-  "routes": {
-    "/MSE-CampusInfo": {},
-    "/MSE-CampusInfo/location": {},
-    "/MSE-CampusInfo/schedule": {}
-  }
-}

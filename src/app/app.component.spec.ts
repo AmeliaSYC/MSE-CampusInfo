@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'MSE-CampusInfo-WebApp' title`, () => {
+  it(`should have the 'MT-CampusInfoApp' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('MSE-CampusInfo-WebApp');
+    expect(app.title).toEqual('MT-CampusInfoApp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, MSE-CampusInfo-WebApp');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, MT-CampusInfoApp');
   });
 });
